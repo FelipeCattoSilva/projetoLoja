@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body{
@@ -32,7 +33,7 @@ header nav ul li a{
     color: white;
     text-transform: uppercase;
     padding: 5px 10px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
 
 header nav ul li a:hover{
@@ -42,9 +43,19 @@ header nav ul li a:hover{
 
 #conteudo{
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr auto;
     gap: 20px;
     padding: 20px;
+}
+
+aside{
+    width: 200px;
+    border: 1px solid #ffffff;
+    background: white;
+    padding: 13px;
+}
+aside ul{
+    list-style: none;
 }
 
 main{
@@ -83,15 +94,6 @@ button{
 }
 button:hover{
     background: rgb(0, 2, 110);
-}
-aside{
-    width: 200px;
-    border: 1px solid #ffffff;
-    background: white;
-    padding: 13px;
-}
-aside ul{
-    list-style: none;
 }
 
 footer{
@@ -133,5 +135,14 @@ footer{
     #conteudo{
         grid-template-columns: 1fr;
     }
-    
+    aside{
+        width: auto;
+        list-style: none;
+        gap: 15px;
+        margin: 10px 0;
+        display: flex;
+    }
+    aside input{
+        max-height: 30px;
+    }
 }
